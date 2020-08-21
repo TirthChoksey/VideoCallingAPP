@@ -50,7 +50,7 @@ public class ResetPassword extends AppCompatActivity {
                         @Override
                         public void onComplete(@NonNull Task<Void> task) {
                             if (task.isSuccessful()) {
-                                Toast.makeText(ResetPassword.this, "Please Confirm your Email Address If you want to reset your password", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(ResetPassword.this, "Email Has Been Sent", Toast.LENGTH_SHORT).show();
                                 Intent mint = new Intent(ResetPassword.this, LoginPage.class);
                                 startActivity(mint);
 
